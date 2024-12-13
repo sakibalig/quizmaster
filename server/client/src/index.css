@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:wght@400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: #faf0e6;
+    color: black;
+  }
+}
+
+@layer utilities {
+  .input_field {
+    @apply p-2 outline-none focus:outline-none border-[1px] border-black rounded-xl;
+  }
+  .input_label {
+    @apply py-2 text-lg font-semibold capitalize;
+  }
+  .input_message {
+    @apply text-red-500 py-1 text-base;
+  }
+  .shift {
+    @apply -translate-x-1 -translate-y-1;
+  }
+  .btn {
+    @apply flex items-center justify-center hover:shift hover:shadow-dark  rounded-lg transition duration-100 font-semibold text-xl border border-black py-2 px-4;
+  }
+  .cta-btn {
+    @apply rounded-lg transition duration-100 font-semibold border border-black py-4  px-4  flex items-center gap-2 justify-center;
+  }
+}
+
+.categories-scrollbar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.categories-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.categories-scrollbar {
+  scrollbar-width: none;
+}
+
+.categories-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.categories-scrollbar::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 8px;
+  border: 2px solid #faf0e6;
+}
+
+.categories-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+.categories-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #5c5470 #23a094;
+}
+/*
+
+ #352F44
+ #5C5470
+ #B9B4C7
+ #FAF0E6 
+
+*/
